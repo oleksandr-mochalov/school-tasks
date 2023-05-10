@@ -1,8 +1,23 @@
 <html>
   <head>
     <title>School Tasks</title>
+    <!-- unicode -->
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/math-subj.js"></script>
+    <script src="js/date-header.js"></script>
+
   </head>
+  <body>
+    <div id="subject-container" class="subject-container">SUBJECT</div>
+    <div id="date-container" class="date-container">DATE</div>
+    <div id="tasks-container" class="tasks-container">TASKS</div>
+    <script>
+      $(document).ready(function(){
+        mathSubjMain().init();
+        dateHeaderMain().init();
+      });
+    </script>
+  </body>
 </html>
-<body>
-  TBC
-</body>
